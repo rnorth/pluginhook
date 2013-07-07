@@ -9,3 +9,8 @@
   result=$($BIN pre-build | wc -l)
   [[ $result -eq 2 ]]
 }
+
+@test "run plugins in series" {
+  result=$($BIN -serial in-series)
+  [[ $result == "12" ]]
+}

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Should run first, but delay to make it obvious if running in parallel
+sleep 1
+echo -n "1"
